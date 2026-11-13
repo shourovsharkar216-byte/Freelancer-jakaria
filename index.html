@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Jakaria - Digital Marketing Specialist</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0a0f1c;
+            --card-bg: #131b2e;
+            --accent-gold: #f5b921;
+            --accent-hover: #d99f11;
+            --text-light: #ffffff;
+            --text-muted: #b0b8c9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Cover Photo Section */
+        .cover-container {
+            width: 100%;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+            background-color: #1a2236;
+        }
+
+        .cover-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 25%; /* Adjusts focus on the person */
+            filter: brightness(0.85);
+        }
+
+        .cover-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(to top, var(--bg-dark), transparent);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Profile Header Section */
+        .profile-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            margin-top: -110px;
+            position: relative;
+            z-index: 10;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            gap: 25px;
+        }
+
+        .profile-pic {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            border: 6px solid var(--bg-dark);
+            box-shadow: 0 0 0 3px var(--accent-gold);
+            overflow: hidden;
+            background-color: var(--card-bg);
+            flex-shrink: 0;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .profile-info {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .profile-info h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .profile-info h1 span {
+            color: var(--accent-gold);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .cta-box {
+            text-align: right;
+        }
+
+        .quote-text {
+            font-style: italic;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: #000;
+            padding: 12px 28px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Core Pillars Bar */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .pillar-card {
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .pillar-card i {
+            font-size: 1.6rem;
+            color: var(--accent-gold);
+        }
+
+        .pillar-card h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .pillar-card p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Section Titles */
+       copyright {
+text-align: center;
+color: var(--text-muted);
+font-size: 0.85rem;
+padding-top: 20px;
+border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+.cover-container { height: 280px; }
+.profile-header {
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: -90px;
+}
+.profile-pic { width: 170px; height: 170px; }
+.cta-box { text-align: center; width: 100%; }
+.check-list { grid-template-columns: 1fr; }
+}
+
+
+Your Growth Partner
+FREELANCER JAKARIA
+Helping Businesses Grow Online with Smart Digital Solutions
+
+"Your Success Is My Goal"
+MESSAGE ME
+
+
+
+STRATEGY
+That Works
+
+
+
+
+
+CREATIVITY
+That Connects
+
+
+
+
+
+RESULTS
+That Matter
+
+
+
+
+
+SUPPORT
+That Cares
+
+
+Our Digital Marketing Services
+
+
+SEO
+On-Page, Off-Page & Technical SEO to rank your website higher on search engines.
+
+
+SOCIAL MEDIA MARKETING
+Complete Strategy & Management across Facebook, Instagram, and LinkedIn.
+
+
+GOOGLE ADS & PPC
+High-converting Campaign Design & Optimization for instant targeted traffic.
+
+
+CONTENT MARKETING
+Engaging Blog, Article, Copywriting & Content Strategy tailored to your brand.
+
+
+EMAIL MARKETING
+High-open-rate Campaign Design & Automation to nurture and convert leads.
+
+
+YOUTUBE SEO & MARKETING
+Organic Channel Growth & Video SEO to maximize views and subscribers.
+
+
+AI MARKETING SOLUTIONS
+Smart AI Content, ChatGPT Integration & Workflow Automation.
+
+
+LEAD GENERATION & CRM
+Targeted Lead Research, Email List Building & CRM Setup.
+
+
+WEBSITE DESIGN & DEVELOPMENT
+Modern WordPress, High-Converting Landing Pages, Shopify & More.
+
+Data Driven Strategy
+On-Time Delivery
+100% Client Satisfaction
+Friendly Support
+
+I HELP YOU ACHIEVE
+
+Increase Website Traffic
+Build Strong Brand Identity
+Generate Quality Leads
+Engage Targeted Audience
+Boost Sales & Conversions
+Get Maximum ROI
+
+WHY WORK WITH ME?
+
+Proven Strategies
+Affordable Packages
+Transparent Communication
+Long Term Support
+
+
+PROUDLY WORKING WITH
+
+Google Ads
+Meta Business
+WordPress
+Shopify
+Google Analytics
+
+
+Let's Grow Your Business Together!
+
+
+
+WHATSAPP
+01608 385 603
+
+
+
+EMAIL
+mdjakariaislam23062006@gmail.com
+
+
+
+WEBSITE
+dev-jakariaislambd.pantheonsite.io
+
+
+© 2026 Freelancer Jakaria. Let's Take Your Business to the Next Level.
